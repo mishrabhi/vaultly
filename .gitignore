@@ -1,0 +1,30 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Uploaded files
+backend/uploads/
+
+# Testing / local artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# Uploaded/generated files
+backend/uploads/
+backend/test_files/*.pdf

@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: vaultly-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: vaultly
+
+    ports:
+      - "5434:5432"
+
+    volumes:
+      - vaultly_pgdata:/var/lib/postgresql/data
+
+volumes:
+  vaultly_pgdata:
