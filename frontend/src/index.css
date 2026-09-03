@@ -1,35 +1,56 @@
-:root {
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-  color: #172033;
-  background: #f6f8fb;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
+html {
   min-width: 320px;
-  min-height: 100%;
-  margin: 0;
+  background: #0b0f0d;
 }
 
 body {
+  margin: 0;
+
+  min-width: 320px;
   min-height: 100vh;
+
+  background: #0b0f0d;
+  color: #f2f4ef;
+
+  font-family:
+    "DM Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 button,
 input,
-textarea {
+textarea,
+select {
   font: inherit;
 }
 
 button {
-  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(166, 216, 46, 0.25);
+  color: #f2f4ef;
+}
+
+#root {
+  min-height: 100vh;
 }
